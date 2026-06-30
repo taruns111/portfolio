@@ -102,6 +102,17 @@ footer span{color:var(--neon);}
 ::-webkit-scrollbar{width:3px;}
 ::-webkit-scrollbar-track{background:var(--bg);}
 ::-webkit-scrollbar-thumb{background:var(--neon);}
+.eg{display:flex;flex-direction:column;gap:1.5rem;}
+.ec{background:var(--bg-card);border:1px solid rgba(0,255,136,.08);border-left:2px solid var(--neon);padding:1.75rem 2rem;position:relative;transition:border-color .3s,transform .3s;}
+.ec:hover{border-color:rgba(0,255,136,.35);border-left-color:var(--neon);transform:translateX(4px);}
+.eh{display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:.5rem;margin-bottom:.3rem;}
+.erole{font-family:'Orbitron',monospace;font-size:.95rem;color:#fff;font-weight:600;}
+.edate{font-family:'Orbitron',monospace;font-size:.62rem;letter-spacing:2px;color:var(--neon2);text-transform:uppercase;white-space:nowrap;}
+.ecompany{font-size:.78rem;color:var(--neon);letter-spacing:1px;margin-bottom:.9rem;}
+.ecompany span{color:var(--muted);}
+.elist{list-style:none;display:flex;flex-direction:column;gap:.55rem;}
+.elist li{font-size:.76rem;color:#888;line-height:1.7;padding-left:1.1rem;position:relative;}
+.elist li::before{content:'›';position:absolute;left:0;color:var(--neon);font-weight:700;}
 @media(max-width:900px){
   .hg{grid-template-columns:1fr !important;display:flex !important;flex-direction:column !important;align-items:center !important;text-align:center;}
   .pw{width:180px !important;height:180px !important;margin:0 auto 2rem auto !important;order:-1 !important;}
@@ -125,6 +136,8 @@ footer span{color:var(--neon);}
   .sn{font-size:1.4rem !important;}
   .hey{text-align:center;}
   .hr{text-align:center;}
+  .ec{padding:1.25rem 1.4rem !important;}
+  .eh{flex-direction:column;}
 }
 @media(max-width:480px){
   .skg{grid-template-columns:1fr !important;}
@@ -140,6 +153,7 @@ footer span{color:var(--neon);}
   <div class="nav-logo">Tarun // PORTFOLIO</div>
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
+    <li><a href="#experience">Experience</a></li>
     <li><a href="#projects">Projects</a></li>
     <li><a href="#skills">Skills</a></li>
     <li><a href="#certificates">Certs</a></li>
@@ -234,11 +248,38 @@ footer span{color:var(--neon);}
 </div>
 
 <!-- =========================================================
+  EXPERIENCE SECTION
+========================================================= -->
+<div id="experience">
+  <div class="sw">
+    <div class="sl">// 02</div>
+    <h2 class="st">Work <span>Experience</span></h2>
+    <div class="eg fu">
+
+      <div class="ec">
+        <div class="eh">
+          <div class="erole">Data Analyst Intern</div>
+          <div class="edate">May 2026 — Present</div>
+        </div>
+        <div class="ecompany">Zetheta Algorithms Pvt. Ltd. <span>· Remote</span></div>
+        <ul class="elist">
+          <li>Building a bond portfolio risk analytics system (Convexity Sensitivity AI Agent) using Python, R, and Power BI to model bond pricing, duration, and convexity metrics.</li>
+          <li>Developed bond pricing and portfolio analytics functions in Python, including Key Rate Duration (KRD) calculations for interest rate risk assessment across yield curve tenors.</li>
+          <li>Analysing financial metrics and KPIs to identify trends, anomalies, and actionable insights for stakeholders.</li>
+          <li>Building and maintaining reports and dashboards to visualise financial data, enabling effective monitoring of financial performance.</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- =========================================================
   PROJECTS SECTION
 ========================================================= -->
 <div id="projects">
   <div class="sw">
-    <div class="sl">// 02</div>
+    <div class="sl">// 03</div>
     <h2 class="st">Featured <span>Projects</span></h2>
     <div class="pg">
 
@@ -297,7 +338,7 @@ footer span{color:var(--neon);}
 ========================================================= -->
 <div id="skills">
   <div class="sw">
-    <div class="sl">// 03</div>
+    <div class="sl">// 04</div>
     <h2 class="st">Technical <span>Skills</span></h2>
     <div class="skg fu">
       <!-- EDIT STEP 6: Add or remove skill tags as you like -->
@@ -349,7 +390,7 @@ footer span{color:var(--neon);}
 ========================================================= -->
 <div id="certificates">
   <div class="sw">
-    <div class="sl">// 04</div>
+    <div class="sl">// 05</div>
     <h2 class="st">Certificates <span>&</span> Achievements</h2>
     <div class="cg fu">
 
@@ -390,7 +431,7 @@ footer span{color:var(--neon);}
 ========================================================= -->
 <div id="contact">
   <div class="sw">
-    <div class="sl">// 05</div>
+    <div class="sl">// 06</div>
     <h2 class="st">Get In <span>Touch</span></h2>
     <div class="cgrid fu">
       <div class="ci">
